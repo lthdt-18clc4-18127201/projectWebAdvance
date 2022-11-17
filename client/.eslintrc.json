@@ -21,7 +21,7 @@
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "prettier/prettier": [
-      "error",
+      "warn",
       {
         "printWidth": 80,
         "tabWidth": 2,

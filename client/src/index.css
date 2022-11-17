@@ -6,12 +6,65 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: url("../public/images/background.jfif");
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+  background: transparent;
+  font-size: 24px;
+  font-weight: bold;
+  -webkit-animation: my 1500ms infinite;
+  -moz-animation: my 1500ms infinite;
+  -o-animation: my 1500ms infinite;
+  animation: my 1500ms infinite;
+}
+
+@-webkit-keyframes my {
+  0% {
+    color: #f8cd0a;
+  }
+  50% {
+    color: rgb(28, 14, 230);
+  }
+  100% {
+    color: #f8cd0a;
+  }
+}
+@-moz-keyframes my {
+  0% {
+    color: #27a301;
+  }
+  50% {
+    color: rgb(201, 182, 14);
+  }
+  100% {
+    color: #02b102;
+  }
+}
+@-o-keyframes my {
+  0% {
+    color: #c05600;
+  }
+  50% {
+    color: rgb(190, 202, 20);
+  }
+  100% {
+    color: #b36a0c;
+  }
+}
+@keyframes my {
+  0% {
+    color: #a30c82;
+  }
+  50% {
+    color: rgb(146, 216, 16);
+  }
+  100% {
+    color: #ae00ff;
+  }
 }
