@@ -3,7 +3,6 @@
   "tabWidth": 2,
   "trailingComma": "none",
   "semi": true,
-  "htmlWhitespaceSensitivity": "css",
-  "quoteProps": "as-needed",
-  "singleQuote": false
+  "singleQuote": false,
+  "endOfLine": "lf"
 }

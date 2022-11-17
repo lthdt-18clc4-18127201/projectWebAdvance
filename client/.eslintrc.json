@@ -4,10 +4,11 @@
     "es2021": true
   },
   "extends": [
+    "react-app",
     "eslint:recommended",
     "plugin:react/recommended",
     "airbnb",
-    "plugin:prettier/recommended"
+    "plugin:prettier"
   ],
   "overrides": [],
   "parserOptions": {
@@ -28,7 +29,8 @@
         "semi": true,
         "htmlWhitespaceSensitivity": "css",
         "quoteProps": "as-needed",
-        "singleQuote": false
+        "singleQuote": false,
+        "jsxSingleQuote": false
       }
     ]
   }
