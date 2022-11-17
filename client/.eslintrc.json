@@ -8,7 +8,7 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "airbnb",
-    "plugin:prettier"
+    "plugin:prettier/recommended"
   ],
   "overrides": [],
   "parserOptions": {
@@ -21,16 +21,13 @@
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "prettier/prettier": [
-      "warn",
+      "error",
       {
         "printWidth": 80,
         "tabWidth": 2,
         "trailingComma": "none",
         "semi": true,
-        "htmlWhitespaceSensitivity": "css",
-        "quoteProps": "as-needed",
-        "singleQuote": false,
-        "jsxSingleQuote": false
+        "singleQuote": false
       }
     ]
   }
