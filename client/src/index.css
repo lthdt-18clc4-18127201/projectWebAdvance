@@ -5,8 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
-  background-image: url("../public/images/background.jfif");
 }
 
 code {
@@ -22,6 +20,33 @@ h1 {
   -moz-animation: my 1500ms infinite;
   -o-animation: my 1500ms infinite;
   animation: my 1500ms infinite;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-image: url("../public/images/background.jfif");
+}
+
+.card-information {
+  display: flex !important;
+  align-items: center;
+  background-color: transparent;
+}
+
+.card-img {
+  max-width: 400px;
+  max-height: 600px;
+}
+
+.text {
+  color: rgb(91, 139, 1);
+  text-transform: uppercase;
 }
 
 @-webkit-keyframes my {
