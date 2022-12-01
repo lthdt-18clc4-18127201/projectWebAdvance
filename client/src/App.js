@@ -4,6 +4,7 @@ import { useQuery } from "react-query";
 import HomePage from "./components/HomePage";
 import NavBar from "./components/Navbar";
 import getMemes from "./api/MemeList";
+import LoginGooglePage from "./components/LoginGooglePage";
 
 function App() {
   const { data, error, isLoading } = useQuery("memes", getMemes);
@@ -25,6 +26,7 @@ function App() {
   return (
     <>
       <NavBar />
+      <LoginGooglePage />
       <div className="App">
         <HomePage />
         <h1 className="mb-4">Welcome to the Memes List</h1>
