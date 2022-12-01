@@ -1,7 +1,12 @@
+import NavBar from "./Navbar";
+
 function HomePage() {
   return (
     <div>
-      <h1>This is HomePage</h1>
+      <NavBar />
+      <div className="contanier">
+        <h1>Welcome to our Game</h1>
+      </div>
     </div>
   );
 }

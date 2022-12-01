@@ -49,6 +49,16 @@ h1 {
   text-transform: uppercase;
 }
 
+.contanier {
+  background-color: #b36a0c;
+  height: 100vh;
+  width: 100%;
+  margin-right: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @-webkit-keyframes my {
   0% {
     color: #f8cd0a;
