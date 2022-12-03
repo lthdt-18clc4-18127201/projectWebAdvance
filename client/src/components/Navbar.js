@@ -1,8 +1,12 @@
+// import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-function BasicExample() {
+function BasicExample({ user }) {
+   const logout = () => {
+    window.open("http://localhost:5001/auth/logout", "_self");
+  };
   return (
     <Navbar bg="light" color="white" expand="lg">
       <Container>
@@ -15,10 +19,18 @@ function BasicExample() {
             <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Nav className="ms-auto">
-          <Nav.Link href="/login">Login</Nav.Link>
-          <Nav.Link href="/signin">Sign in</Nav.Link>
-        </Nav>
+          {user ? (
+            <Nav className="ms-auto">
+              <Nav.Link href="/profile">{user.displayName}</Nav.Link>
+              <Nav.Link onClick={logout}>Log out</Nav.Link>
+            </Nav>
+           
+          ) : (
+            <Nav className="ms-auto">
+              <Nav.Link href="/login">Login</Nav.Link>
+              <Nav.Link href="/signin">Sign in</Nav.Link>
+            </Nav>
+          )}
       </Container>
     </Navbar>
   );
