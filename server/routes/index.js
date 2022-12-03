@@ -1,5 +1,7 @@
 import siteRouter from "./siteRouter.js";
 import authRoute from "./authRouter.js";
+// const siteRouter = require("./siteRouter.js");
+// const authRoute = require("./authRouter.js");
 
 function route(app) {
   app.use("/", siteRouter);
@@ -9,4 +11,6 @@ function route(app) {
   });
 }
 
+// module.exports = route;
 export default route;
+
